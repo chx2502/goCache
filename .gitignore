@@ -10,7 +10,7 @@ naries for programs and plugins
 
 # Output of the go coverage tool, specifically when used with LiteIDE
 *.out
-.DS_Store
-.idea
+*/.DS_Store
+*/.idea
 # Dependency directories (remove the comment below to include it)
 # vendor/
