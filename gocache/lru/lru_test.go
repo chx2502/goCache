@@ -2,6 +2,7 @@ package lru
 
 import (
 	"fmt"
+	"gocache/model"
 	"reflect"
 	"testing"
 )
@@ -41,7 +42,7 @@ func TestCache_RemoveOldest(t *testing.T) {
 
 func TestOnEvicted(t *testing.T) {
 	keys := make([]string, 0)
-	callback := func(key string, value Value) {
+	callback := func(key string, value model.Value) {
 		keys = append(keys, key)
 	}
 	lru := New(int64(10), callback)

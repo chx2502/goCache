@@ -22,7 +22,7 @@ func createGroup() *gocache.Group {
 				return []byte(v), nil
 			}
 			return nil, fmt.Errorf("%s not exist", key)
-		}))
+		}), "lfu")
 }
 
 func startCacheServer(addr string, addrs []string, group *gocache.Group) {

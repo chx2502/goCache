@@ -23,5 +23,6 @@ curl "http://localhost:9999/api?key=Namei" &
 curl "http://localhost:9999/api?key=Namei" &
 curl "http://localhost:9999/api?key=Namei" &
 curl "http://localhost:9999/api?key=Namei" &
-
+curl "http://localhost:9999/gocache/scores/Cheng"
+curl "http://localhost:9999/gocache/scores/kkk"
 wait
